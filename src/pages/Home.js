@@ -9,6 +9,7 @@ const Home = () => {
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
   const filePath = "./Pexel的API.txt";
+  //請自行到 Pexel 網站上申請 API key，並創建一個名為"Pexel的API.txt"的文字文件，再將申請到的API key貼上即可
   const auth = axios
     .get(filePath)
     .then((response) => {
