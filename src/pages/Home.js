@@ -8,16 +8,7 @@ const Home = () => {
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
-  const filePath = "./Pexel的API.txt";
-  //請自行到 Pexel 網站上申請 API key，並創建一個名為"Pexel的API.txt"的文字文件，再將申請到的API key貼上即可
-  const auth = axios
-    .get(filePath)
-    .then((response) => {
-      response.data.trim();
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  const auth = " !!! 請自行上Pexel官方網站申請 API key !!! ";
   const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=15";
   let searchURL = `https://api.pexels.com/v1/search?query=${input}&per_page=15&page=1`;
 
