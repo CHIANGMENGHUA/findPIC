@@ -1,0 +1,37 @@
+nav {
+  background-color: rgb(69, 69, 69);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    li {
+      padding: 0.5rem 1rem;
+      a {
+        font-size: 1.25rem;
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+    button {
+      background-color: rgb(69, 69, 69);
+      background-size: cover;
+      border: none;
+      padding: 1rem 1rem;
+      margin-right: -1.5rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      background-image: url("/icons8-top-67.png");
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}
